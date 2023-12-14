@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEXTER BURLASA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+    scroll-behavior: smooth;
+    }
+    </style>
+    
+    <script src="https://kit.fontawesome.com/512f65f27b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Fixed Navigation Placeholder -->
+    <div class="nav-placeholder"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="name-info">
+                <h1>DEXTER BURLASA</h1>
+                <p class="tagline">Aspiring Web Developer</p>
+                <br>
+            </div>
+            <!-- Navigation with Fixed Class -->
+            <nav class="fixed-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#blog">Blog/Article</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#social-media-links">Social Media</a></li>
+                </ul>
+            </nav>
+            <!-- End Navigation -->
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" id="aboutContent">
+                    <h2>About Me</h2>
+                    <p>
+                        Hello and thank you for visiting my portfolio! I'm Dexter Burasa, a passionate UI Designer based in the Philippines. I focus on creating visually appealing and user-friendly interfaces, aiming to elevate both the aesthetic and functional aspects of the digital landscape.
+                        <span id="dots">.</span><span id="more"> I love turning complex problems into simple, beautiful, and intuitive designs. My goal is to provide a seamless user experience and bring ideas to life through creative and innovative design solutions.
+                            In addition to my design work, I am also enthusiastic about web development. I enjoy coding and creating interactive websites that enhance user engagement. My technical skills include HTML, CSS, JavaScript, and more. I am always eager to learn and stay updated with the latest technologies in the ever-evolving field of web development.
+
+                            Let's collaborate and create something amazing together! Feel free to explore my portfolio and get in touch with me for any inquiries or project proposals.
+                            </span>
+                        </p>
+                        </span>
+                    </p>
+                    <button onclick="toggleReadMore()" id="readMoreBtn">Read more</button>
+                </div>
+
+                <div class="about-img"> 
+                    <img src="about pic.png" alt="User Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="resume-background">
+        <div class="resume-background">
+            <div class="container">
+                <h2>Resume</h2>
+                <p>Download my resume for more details:</p>
+                <a href="Resume Dexter.pdf" target="_blank" class="resume-link">Download Resume (PDF)</a>
+                <div class="resume-content">
+                    <div class="resume-item">
+                        <h3>Education</h3>
+                        <p>Currently taking Bachelor of Science in Information Technology, Rizal Technology University</p>
+                        
+                    </div>
+                    <div class="resume-item">
+                        <h3>Work Experience</h3>
+                        <p>As of now, I am actively engaged in a journey of continuous learning in programming. Exploring various technologies, frameworks, and languages to enhance my skills and stay updated with the latest trends in the industry.</p>
+                        
+                    </div>
+                    <!-- Add more resume items as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        function toggleReadMore() {
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("readMoreBtn");
+
+            if (moreText.style.display === "none" || moreText.style.display === "") {
+                moreText.style.display = "inline";
+                btnText.innerHTML = "Read less";
+            } else {
+                moreText.style.display = "none";
+                btnText.innerHTML = "Read more";
+            }
+        }
+    </script>
+
+</body>
+</html>
+    
+<section id="blog">
+    <div class="container">
+        <h2>My Blogs</h2> 
+        <div class="video-container">
+            <div class="video">
+                <video width="320" height="180" controls>
+                    <source src="2019.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Captured four years ago, this video features me singing a song with heartfelt emotion.</p>
+            </div>
+            <div class="video">
+                <video width="320" height="180" controls>
+                    <source src="panda.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>The second video showcases a tender moment as I lovingly pet my sleeping pupu, sharing a heartwarming bond captured on camera."</p>
+            </div>
+            <div class="video">
+                <video width="320" height="180" controls>
+                    <source src="birthday.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>The third video was filmed during my birthday celebration, capturing joyful moments and cherished memories shared on that special day</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+<section id="portfolio">
+    <div class="container">
+        <h2>Portfolio</h2> 
+        <div class="blog-list">
+            <div class="blog-post">
+                <i class="fas fa-newspaper"></i>
+                <h3>Design Trends in 2023</h3>
+                <p>Dive into the dynamic world of digital design with our comprehensive exploration of the latest trends shaping 2023. This insightful article goes beyond surface-level trends, offering in-depth analysis and foresight into the innovative concepts redefining the design landscape. Discover how evolving technologies and user behaviors influence design paradigms, providing a roadmap for staying ahead in a rapidly changing industry. From UI/UX innovations to groundbreaking visual concepts, this piece serves as a guide for professionals seeking to harness the power of cutting-edge design in their work.</p>
+            </div>
+            <div class="blog-post">
+                <i class="fas fa-pen"></i>
+                <h3>The Art of Writing Code</h3>
+                <p>Uncover the artistry within the lines of code through this illuminating piece that celebrates the elegance of efficient programming. Delve into the foundational principles and advanced techniques that transform code from functional to exceptional. This article isn't just about writing code; it's a journey through the mindset and methodologies that elevate coding to a form of expression. Whether you're a novice or an experienced developer, this exploration of best practices and strategies promises to refine your coding skills and elevate your programming craft.</p>
+            </div>
+            <div class="blog-post special-post">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Exploring Colors in Design</h3>
+                <p>Colors wield an incredible influence on design, and this exploration plunges deep into their significance and application. This captivating article unveils the psychological impact and emotional resonance of different color palettes, guiding designers on how to harness this power effectively. Discover the art and science of color combinations, understanding how to create visually stunning and harmonious designs that resonate with audiences. From choosing the right hues to balancing contrasts, this piece serves as a beacon for designers aiming to create captivating and impactful visual experiences.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <section id="contact">
+        <div class="container">
+            <div class="contact-content">   
+                <div class="contact-info">
+                    <h2>Contact Me</h2>
+                    <p><i class="fas fa-envelope"></i> dexterrenomeron@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 923-3345</p>
+                </div>
+                <div class="contact-form">
+                    <h2>Send Me a Message</h2>
+                    <form>
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" rows="6" placeholder="Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="social-media-links">
+        <div class="container">
+            <div class="social-media-links">
+                <h2>Social Media Links</h2>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100090116619321"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@dexterrenomeron?lang=en"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023. All rights reserved.</p>
+        </div>
+    </footer>
+</html>

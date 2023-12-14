@@ -1,0 +1,649 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {  
+    background: url('bg1.png') center/cover no-repeat;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-image: url('bg1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+body {
+    margin-top: px; /* Adjust the value based on how much space you want to cut from the top */
+    padding-top: 0; /* You can also adjust padding if needed */
+}
+
+
+/* Header */
+#header {
+    width: 100%;
+    height: 100vh;
+    background: url('images/Untitled.png') center/cover no-repeat;
+}
+
+header {
+    padding: 69.5px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 6em;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Logo styles */
+.logo {
+    width: 250px; /* Set the desired width for your logo */
+    height: 250px; /* Set the desired height for your logo */
+    border-radius: 50%; /* Make the logo round */
+    overflow: hidden; /* Ensure the round shape is applied */
+    position: relative; /* Position relative for absolute positioning of text */
+    border: 5px solid #FFD700; /* Add a bright border to the logo */
+}
+
+.logo img {
+    width: 100%; /* Make sure the image inside the logo container fills it */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+/* Moving text around the logo */
+.logo::before {
+    content: 'Rizal technology University'; /* Add your desired moving text here */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap; /* Prevent text from wrapping */
+    color: #fff; /* Text color */
+    font-size: 25px; /* Adjust font size as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+    animation: moveText 5s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes moveText {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+
+.name-info {
+    text-align: right;
+    margin-top: 35px;
+}
+
+.name-info h1 {
+    font-family: 'Alex Brush', cursive; /* Using the Alex Brush font */
+    color: #FFD700; /* Your desired text color */
+    margin-bottom: 10px;
+    font-size: 60px; /* Adjust the font size as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding a shadow effect */
+}
+
+
+
+.tagline {
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Your Cooler Font', sans-serif; /* Replace 'Your Cooler Font' with another cool font */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add text shadow for a subtle effect */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav ul li {
+    margin: 10px 20px;
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px; /* Make the links oblong with rounded corners */
+    transition: 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+nav ul li a:hover {
+    background-color: #ff004f; /* Change the background color on hover */
+    transform: translateY(-5px); /* Add a bounce effect on hover */
+        color: #FFD700;
+    
+}
+
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #ff004f;
+}
+ /* Fixed Navigation */
+ .fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Adjust the height based on your design preference */
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .nav-placeholder {
+       height: 60px;
+   }
+   /* End Fixed Navigation */
+
+   section {
+    padding: 80px 0;
+}
+
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+
+#more {
+    display: none;
+}
+
+
+#readMoreBtn {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#readMoreBtn:hover {
+    background: #000;
+    color: #FFD700;
+}
+
+#about {
+    background: url('your-background-image.jpg') center/cover no-repeat;
+    padding: 80px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.7); /* Add a background color if needed */
+    padding: 20px; /* Add padding as needed */
+    border-radius: 10px; /* Add border-radius as needed */
+}
+
+.about-text h2,
+.about-text p {
+    color: #fff; /* Set text color */
+}
+
+.about-text {
+    max-width: 600px;
+    flex-basis: calc(50% - 20px); /* Adjust the width as needed */
+}
+
+.about-img {
+    flex-basis: calc(50% - 20px); /* Adjust the width as needed */
+}
+
+
+.about-content img {
+    width: 100%;
+    max-width: 400px;
+    border: 0; /* Remove border */
+    box-shadow: none; /* Remove box shadow */
+}
+
+
+
+.resume-background {
+    /* Add your background image */
+    background: url('resume.jpg') center/cover no-repeat;
+    /* Other styles for the resume section */
+    padding: 80px 0;
+    color: #fff;
+}
+
+
+.resume-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.resume-link:hover {
+    background-color: #000;
+    color: #FFD700;
+}
+
+.resume-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.resume-item {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.resume-item h3 {
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.resume-item p {
+    color: #333; /* Text color for the items */
+    margin-bottom: 10px;
+}
+
+.resume-item:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 768px) {
+    .resume-item {
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+}
+
+
+#blog {
+    padding: 80px 0;
+    background: url('') center/cover no-repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 160px;
+    border-radius: 10px;
+}
+
+
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.blog-list .blog-post {
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-list .blog-post i {
+    background-color: #FFD700;
+    color: #0e0808;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.blog-post {
+    flex-basis: calc(33.33% - 20px);
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.blog-post:hover {
+    transform: translateY(-10px);
+}
+
+.blog-post-content {
+    padding: 20px;
+}
+
+
+.blog-post {
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-post i {
+    background-color: #FFD700;
+    color: #fff;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.blog-post:hover {
+    transform: translateY(-10px);
+    background-color: #000;
+    color: #FFD700;
+}
+
+.blog-post h3 {
+    color: #FFD700;
+}
+
+.blog-post p {
+    color: #fff;
+}
+
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    overflow-x: auto; 
+}
+
+.video {
+    width: 320px; 
+    text-align: center;
+}
+
+.video video {
+    width: 100%; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video p {
+    margin-top: 10px;
+}
+
+
+/* Portfolio Section */
+#portfolio {
+    padding: 50px 0;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.work {
+    width: 30%;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.work video {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.work:hover video {
+    transform: scale(1.2);
+}
+/* Contact Section */
+#contact {
+    padding: 80px 0;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 2px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #FFD700;
+    color: #000;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #FFD700;
+    color: #000;
+}
+.contact-left,
+.contact-right {
+    flex-basis: 48%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+
+.social-media-links {
+    margin-top: 3px;
+    background-color: #262626;
+    padding: 5px; 
+    border-radius: 10px; 
+}
+
+.social-icons {
+    margin: 0; 
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn.btn2 {
+    display: inline-block;
+    background: #ff004f;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust the z-index as needed */
+    overflow: hidden; /* Prevent the overflow of the moving text */
+}
+
+footer p {
+    color: #FFD700;
+    white-space: nowrap; /* Prevent the text from wrapping */
+    animation: moveText 10s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes moveText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
